@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commune Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li class="commune-nav">
+          <img src="/Assets/Logo.svg" alt="" />
+        </li>
+        <button id="ham-menu">
+          <img src="/Assets/Hamburger Menu.svg" alt="" />
+        </button>
+        <div class="right" id="nav-ul">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Affiliates</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Communities</a></li>
+          <li class="join"><a href="#">Join Waitlist</a></li>
+        </div>
+      </ul>
+    </nav>
+    <!-- main-div -->
+    <div class="main-div">
+      <div class="content">
+        <h3>
+          We are now allowing early access for users.
+          <a href="#">Learn more</a>
+        </h3>
+
+        <h1>Build a highly engaged community with no effort.</h1>
+        <p>
+          Commune offers the tools that you need to build a highly engaged
+          community with little to no effort. Simply setup your Commute
+          workspace, and manage everything from members to content from one
+          central dashboard.
+        </p>
+        <form action="#">
+          <input type="email" placeholder="Enter your email address" />
+          <input type="submit" value="Join Waitlist" />
+        </form>
+      </div>
+      <div class="img">
+        <img src="/Assets/Illustration.png" alt="" />
+      </div>
+    </div>
+    <!-- companies logo -->
+    <div class="logos">
+      <p>Used by these companies</p>
+      <div class="logo-img">
+        <img src="/Assets/Atlassian Icon.svg" alt="" /><img
+          src="/Assets/Behance Icon.svg"
+          alt=""
+        /><img src="/Assets/Bing Icon.svg" alt="" />
+
+        <img src="/Assets/Bitbucket Icon.svg" alt="" />
+        <img src="/Assets/Dropbox Icon.svg" alt="" /><img
+          src="/Assets/Twitch Icon.svg"
+          alt=""
+        /><img src="/Assets/Twitter Icon.svg" alt="" />
+      </div>
+    </div>
+  </body>
+  <script>
+    const Hamburger = document.getElementById("ham-menu");
+    Hamburger.addEventListener("click", () => {
+      navUL.classList.toggle("show");
+    });
+    const navUL = document.getElementById("nav-ul");
+  </script>
+</html>
